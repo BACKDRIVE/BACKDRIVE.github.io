@@ -1,10 +1,20 @@
 body{
 	width:100%;
+	background-color: #3f3f3f;
+	font-family: "Lucida Console";
+	color: white;
 }
 .headerimg {
-	width: 90%;
+	width: 75%;
 }
 .header {
 	width: 100%;
 	margin: 0 auto;
+	text-align: center;
 }
+#nav a{
+	font-size:2em;
+	text-decoration: none;
+	color: inherit;
+}
+#nav a:first-child ~ a:before { content: "\2022\A0"; } /*bullets*/
