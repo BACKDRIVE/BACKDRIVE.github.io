@@ -1,0 +1,10 @@
+# Site settings
+title: Backdrive
+email: your-email@domain.com
+description: > Backdrive is a VEX Robotics Competition (VRC)
+team (#8768A) located in Huntington, West Virginia, USA.
+baseurl: "" # the subpath of your site, e.g. /blog/
+
+
+# Build settings
+markdown: kramdown
