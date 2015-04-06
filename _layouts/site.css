@@ -3,8 +3,10 @@ body{
 }
 header img{
 	max-width:90%;
+	width: 800px;
 	height:auto;
 }
 header {
 	width: 100%;
+	margin: 0 auto;
 }
