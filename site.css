@@ -3,6 +3,15 @@ body{
 	background-color: #3f3f3f;
 	font-family: "Lucida Console";
 	color: white;
+	text-align: center;
+}
+a {
+	color:#999999;
+}
+p {
+	width: 800px;
+	max-width: 90%;
+	margin: 0 auto;
 }
 .headerimg {
 	width: 75%;
@@ -18,3 +27,9 @@ body{
 	color: inherit;
 }
 #nav a:first-child ~ a:before { content: "\2022\A0"; } /*bullets*/
+.back {
+	color:#FF0012;
+}
+.drive {
+	color:#0066FF;
+}
