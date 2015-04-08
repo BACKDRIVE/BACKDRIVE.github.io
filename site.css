@@ -11,7 +11,7 @@ body{
 	color: white;
 	background-color: #3f3f3f;
 	text-align: center;
-	font-family: "Lucida Console";
+	font-family: "Lucida Console", "monospace";
 }
 
 a {
@@ -49,7 +49,13 @@ h1 {
 .navitem {
     display: inline-block;
     margin: 0 0.25em;
+    padding: 0 0.25em;
     text-align: center;
+    height: 1em;
+    overflow: hidden;
+    position: relative;
+    transition: height 0.5s;
+    -webkit-transition: height 0.5s, border-radius 0.5s, color 0.5s, background-color 0.5s;
 }
 
 /* Add bullets between navbar items */
@@ -63,12 +69,11 @@ h1 {
 	color: inherit;
 }
 
-.back {
-	color:#FF0012;
-}
-
-.drive {
-	color:#0066FF;
+.navitem:hover {
+	height:auto;
+	background-color: white;
+	border-radius: 5px;
+	color: black;
 }
 
 .content {
