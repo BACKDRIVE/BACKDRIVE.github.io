@@ -16,32 +16,32 @@ body{
 
 h1 {
 	display: block;
-    font-size: 2em;
-    margin-top: 0.67em;
-    margin-bottom: 0.67em;
-    margin-left: 0;
-    margin-right: 0;
-    font-weight: bold;
+	font-size: 2em;
+	margin-top: 0.67em;
+	margin-bottom: 0.67em;
+	margin-left: 0;
+	margin-right: 0;
+	font-weight: bold;
 }
 
 h2 {
-    display: block;
-    font-size: 1.5em;
-    margin-top: 0.83em;
-    margin-bottom: 0.83em;
-    margin-left: 0;
-    margin-right: 0;
-    font-weight: bold;
+	display: block;
+	font-size: 1.5em;
+	margin-top: 0.83em;
+	margin-bottom: 0.83em;
+	margin-left: 0;
+	margin-right: 0;
+	font-weight: bold;
 }
 
 h3 { 
-    display: block;
-    font-size: 1.17em;
-    margin-top: 1em;
-    margin-bottom: 1em;
-    margin-left: 0;
-    margin-right: 0;
-    font-weight: bold;
+	display: block;
+	font-size: 1.17em;
+	margin-top: 1em;
+	margin-bottom: 1em;
+	margin-left: 0;
+	margin-right: 0;
+	font-weight: bold;
 }
 
 a {
@@ -71,25 +71,6 @@ h1 {
 	width: 75%;
 }
 
-#nav {
-	margin: 1em;
-	font-size: 1.25em;
-	display: inline-block;
-	margin: 0 auto;
-}
-
-.navitem {
-    display: inline-block;
-    margin: 0 0.25em;
-    padding: 0 0.25em;
-    text-align: center;
-    height: 1em;
-    overflow: hidden;
-    position: relative;
-    transition: height 0.5s, border-radius 0.5s, color 0.5s, background-color 0.5s;
-    -webkit-transition: height 0.5s, border-radius 0.5s, color 0.5s, background-color 0.5s;
-}
-
 /* Add bullets between navbar items */
 .navitem:first-child ~ .navitem:before {
 	content: "\2022";
@@ -111,53 +92,28 @@ h1 {
 .content {
 	padding: 1em;
 }
-#cssmenu ul,
-#cssmenu li,
-#cssmenu span,
-#cssmenu a {
-  margin: 0;
-  padding: 0;
-  position: relative;
-  text-decoration: none;
-  color: inherit;
-  margin: .25em;
-}
-#cssmenu:after,
-#cssmenu ul:after {
-  content: '';
-  display: block;
-  clear: both;
+
+nav>span {
+	display: inline-block;
+	vertical-align: top;
+	max-height: 2em;
+	margin: 0.5em;
+	overflow: hidden;
+	background-color: #333;
 }
 
-#cssmenu ul {
-  list-style: none;
-}
-#cssmenu > ul > li {
-  float: left;
-  border-radius: 5px;
-  padding: .25em;
-}
-
-#cssmenu > ul > li:hover {
-	color:black;
-	background-color: white;
-}
-.sub {
-	display: none;
-}
-#cssmenu > ul > li.has-sub:hover .sub {
+nav a {
 	display: block;
-	position: fixed;
-	z-index: 1000;
-	text-align: left;
-	background-color: white;
-	color: black;
-	border-radius: 0px 5px 5px 5px;
-	margin: 0;
-	margin-left: -5px;
-	width: auto;
-	padding:0;
+	color: white;
+	margin: 0.5em;
+	text-decoration: none;
 }
-.sub > li:hover {
-	background-color: #BBBBBB;
+
+.dropdown {
+	transition: background-color 0.5s, max-height 0.5s, margin-bottom 0.5s;
+}
+
+.dropdown:hover {
+	max-height: 6em;
+	margin-bottom: -5em;
 }
