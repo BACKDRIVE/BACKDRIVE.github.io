@@ -1,34 +1,57 @@
+<!DOCTYPE html>
 <html>
 	<head>
 		<title>{{ page.title }} - BACKDRIVE VRC Team</title>
 		<link rel="stylesheet" type="text/css" href="{{ site.url }}/site.css">
-		<link rel="shortcut icon" href="{{ site.url }}/favicon.ico">
+		<!-- BEGIN Icon Gubbins -->
+		<link rel="apple-touch-icon" sizes="57x57" href="{{ site.url }}/icons/apple-touch-icon-57x57.png">
+		<link rel="apple-touch-icon" sizes="60x60" href="{{ site.url }}/icons/apple-touch-icon-60x60.png">
+		<link rel="apple-touch-icon" sizes="72x72" href="{{ site.url }}/icons/apple-touch-icon-72x72.png">
+		<link rel="apple-touch-icon" sizes="76x76" href="{{ site.url }}/icons/apple-touch-icon-76x76.png">
+		<link rel="apple-touch-icon" sizes="114x114" href="{{ site.url }}/icons/apple-touch-icon-114x114.png">
+		<link rel="apple-touch-icon" sizes="120x120" href="{{ site.url }}/icons/apple-touch-icon-120x120.png">
+		<link rel="apple-touch-icon" sizes="144x144" href="{{ site.url }}/icons/apple-touch-icon-144x144.png">
+		<link rel="apple-touch-icon" sizes="152x152" href="{{ site.url }}/icons/apple-touch-icon-152x152.png">
+		<link rel="apple-touch-icon" sizes="180x180" href="{{ site.url }}/icons/apple-touch-icon-180x180.png">
+		<link rel="icon" type="image/png" href="{{ site.url }}/icons/favicon-32x32.png" sizes="32x32">
+		<link rel="icon" type="image/png" href="{{ site.url }}/icons/android-chrome-192x192.png" sizes="192x192">
+		<link rel="icon" type="image/png" href="{{ site.url }}/icons/favicon-96x96.png" sizes="96x96">
+		<link rel="icon" type="image/png" href="{{ site.url }}/icons/favicon-16x16.png" sizes="16x16">
+		<link rel="manifest" href="{{ site.url }}/icons/manifest.json">
+		<link rel="shortcut icon" href="{{ site.url }}/icons/favicon.ico">
+		<meta name="msapplication-TileColor" content="#3f3f3f">
+		<meta name="msapplication-TileImage" content="{{ site.url }}/icons/mstile-144x144.png">
+		<meta name="msapplication-config" content="{{ site.url }}/icons/browserconfig.xml">
+		<meta name="theme-color" content="#3f3f3f">
+		<!-- END Icon Gubbins -->
 	</head>
 	<body>
 		<div class="header">
 			<img class="headerimg" src="{{ site.url }}/img/logo_horizontal_backdrive.png" alt="Backdrive VRC Team Logo">
-			<div id="nav">
-				<div id="cssmenu">
-					<ul>
-						<li><a href="{{ site.url }}/index.html"><span>Home</span></a></li>
-						<li class="has-sub"><a href="{{ site.url }}/about.html"><span>About</span></a>
-							<ul class="sub">
-								<li><a href="{{ site.url }}/about.html#members"><span>Members</span></a></li>
-								<li class="last"><a href="{{ site.url }}/about.html#hist"><span>History</span></a></li>
-							</ul>
-						<li class="has-sub"><a href="{{ site.url }}/robots/index.html"><span>Robots</span></a>
-							<ul class="sub">
-								<li class="last"><a href="{{ site.url }}/robots/skyrise.html"><span>Skyrise</span></a></li>
-							</ul>
-						<li><a href="{{ site.url }}/blog.html"><span>Blog</span></a></li>
-						<li class="has-sub"><a href="{{ site.url }}/results/index.html"><span>Tournament Results</span></a>
-							<ul class="sub">
-								<li class="last"><a href="{{ site.url }}/results/skyrise.html"><span>Skyrise</span></a></li>
-							</ul>
-						<li><a href="{{ site.url }}/contact.html"><span>Contact</span></a>	
-					</ul>
-				</div>
-			</div>
+			<nav>
+				<span>
+					<a href="{{ site.url }}/index.html">Home</a>
+				</span>
+				<span class="dropdown">
+					<a href="{{ site.url }}/about.html">About</a>
+					<a href="{{ site.url }}/about.html#members">Members</a>
+					<a href="{{ site.url }}/about.html#hist">History</a>
+				</span>
+				<span class="dropdown">
+					<a href="{{ site.url }}/robots/index.html">Robots</a>
+					<a href="{{ site.url }}/robots/skyrise.html">Skyrise</a>
+				</span>
+				<span>
+					<a href="{{ site.url }}/blog.html">Blog</a>
+				</span>
+				<span class="dropdown">
+					<a href="{{ site.url }}/results/index.html">Tournament Results</a>
+					<a href="{{ site.url }}/results/skyrise.html">Skyrise</a>
+				</span>
+				<span>
+					<a href="{{ site.url }}/contact.html">Contact</a>
+				</span>
+			</nav>
 		</div>
 		<div class="content">
 			<h1>{{ page.title }}</h1>
