@@ -8,12 +8,25 @@
 		<div class="header">
 			<img class="headerimg" src="{{ site.url }}/img/logo_horizontal_backdrive.png" alt="Backdrive VRC Team Logo">
 			<div id="nav">
-				<div class="navitem"><a href="{{ site.url }}/index.html">Home</a><br/><br/>Hidden!			
-				</div><div class="navitem"><a href="{{ site.url }}/about.html">About</a> 	
-				</div><div class="navitem"><a href="{{ site.url }}/robots.html">Robots</a>	
-				</div><div class="navitem"><a href="{{ site.url }}/blog.html">Blog</a>		
-				</div><div class="navitem"><a href="{{ site.url }}/results.html">Tournament Results</a>
-				</div><div class="navitem"><a href="{{ site.url }}/contact.html">Contact</a>
+				<div id="cssmenu">
+					<ul>
+						<li><a href="{{ site.url }}/index.html"><span>Home</span></a></li>
+						<li class="has-sub"><a href="{{ site.url }}/about.html"><span>About</span></a>
+							<ul class="sub">
+								<li><a href="{{ site.url }}/about.html#members"><span>Members</span></a></li>
+								<li class="last"><a href="{{ site.url }}/about.html#hist"><span>History</span></a></li>
+							</ul>
+						<li class="has-sub"><a href="{{ site.url }}/robots/index.html"><span>Robots</span></a>
+							<ul class="sub">
+								<li class="last"><a href="{{ site.url }}/robots/skyrise.html"><span>Skyrise</span></a></li>
+							</ul>
+						<li><a href="{{ site.url }}/blog.html"><span>Blog</span></a></li>
+						<li class="has-sub"><a href="{{ site.url }}/results/index.html"><span>Tournament Results</span></a>
+							<ul class="sub">
+								<li class="last"><a href="{{ site.url }}/results/skyrise.html"><span>Skyrise</span></a></li>
+							</ul>
+						<li><a href="{{ site.url }}/contact.html"><span>Contact</span></a>	
+					</ul>
 				</div>
 			</div>
 		</div>
